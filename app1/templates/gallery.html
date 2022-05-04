@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+       <div class="container">   
+       <div class="row">
+      <br>
+        {% for d in data %}
+        <div class="col-sm-4">
+        <a href="{% url 'app1:details' d.id %}">  <img src="{{d.Carphoto.url}}" width=200 height=200></a><br>
+        
+         {{d.Carname}}<br>
+         <br>
+        </div>
+         {% endfor %}  
+       
+       </div>
+       </div>
+    {% endblock %}

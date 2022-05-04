@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  
+       <div class="container">   
+       <div class="row">
+      <br>
+      <div class="col-sm-1">
+          <br>
+          <br>
+        Name:{{data.Carname}}<br>
+        Model:{{data.Carmodel}}<br>
+        Prize:{{data.Carprize}}<br>
+       </div>
+       <div class="col-sm-1">
+        <img src="{{data.Carphoto.url}}" width=200 height=200>
+    </div>
+</div>
+</div>
+   
+   {% endblock %}
